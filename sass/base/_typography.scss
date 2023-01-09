@@ -1,0 +1,75 @@
+body {
+  font-family: 'Clicker Script', cursive; 
+  font-weight: 4000;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 35px;
+}
+
+.heading-primary {
+  color: rgb(115, 167, 154);
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.9rem;
+    animation-name: moveInTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    margin-bottom: 0.5rem;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+}
+
+.heading-secondary {
+ 
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light-1,
+    $color-primary-light
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  &:hover {
+    transform: skewY(2deg) skewX(5deg) scale(0.9);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.267);
+  }
+}
+.heading-tertiary {
+  font-family: 'Dancing Script', cursive;
+  color: $color-primary-light-1;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph {
+  color: $color-primary-light;
+  margin-top:3rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
